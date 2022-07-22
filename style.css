@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+   
+}
+
+.leftblock{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(69, 69, 69);
+    position: relative;
+    overflow: hidden;
+}
+
+.leftblock > img{
+    position: absolute;
+    margin-left: auto;
+    height: 140%;
+    right: 0;
+    top: 0px;
+    /* width: 100%; */
+    /* object-fit: cover; */
+    /* transform:translate(20px,20px) scale(1) ; */
+}
+
+.quote{
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 2rem;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-family: 'Anton', sans-serif;
+    font-size: 2.5rem;
+    width: 20vw;
+    text-align:right;
+    z-index: 1;
+
+}
+
+
+.singlelink{
+
+display: flex;
+align-items: center;
+transition-duration: 200ms;
+
+}
+
+.singlelink:hover{
+
+    transform: translateX(20px);
+
+
+
+}
+
+
+a{
+    text-decoration: none;
+    /* font-family: 'Oswald', sans-serif; */
+    font-weight:bold;
+    font-family: 'Anton', sans-serif; 
+    font-size: 1.8rem;
+    color: black;
+}
+
+
+.differentlinks{
+
+    padding:2rem;
+    background-color: white;
+
+}
+
+.rightblock{
+    width: 100%;
+    background-color: white;
+}
+
+.scrollcontainer{
+    display: flex;
+    overflow-x: auto;
+}
+
+.scrollobject{
+    background-color: rgb(255, 255, 255);
+    min-width: 500px;
+    margin-right: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 4px;
+}
+
+.projectname{
+    font-family: 'Anton', sans-serif;
+    font-size: 2rem;
+}
+
+.backbutton{
+
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 5px;
+
+}
+
+.backbutton img{
+
+    width: 24px;
+
+}
+.backbuttontext a{
+    font-family: 'Anton', sans-serif;
+    font-size: 1rem;
+
+}
+.casestudy{
+
+    padding-left: 2rem;
+    padding-top: 2rem;
+    padding-right: 2rem;
+
+}
+
+.casestudyhead{
+    font-family: 'Anton', sans-serif;
+    font-size: 3rem;
+}
+
+.casestudylink{
+
+    display: flex;
+    align-items: center;
+    padding-bottom: 2rem;
+    padding-top: 0.5rem;
+}
+
+.casestudylink a{
+
+    font-family: 'Anton', sans-serif;
+    font-size: 1.4rem;
+}
+
+
+.scrollobject  img{
+    
+   
+    height: 100%;
+    width: 100%;
+}
+
+.uiimages{
+
+    display: grid;
+    grid-template-columns: auto;
+    padding: 0 2rem;
+    
+}
+.uiimages img{
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.aboutme{
+    
+    display: flex;
+    flex-direction: row;
+    
+}
+.aboutme img{
+    width:auto;
+    
+}
+
+.aboutme .heading{
+    font-family: 'Anton', sans-serif;
+    font-size: 2rem;
+    padding-left: 1rem;
+
+}
+
+.aboutme .text{
+    font-family: 'Roboto', sans-serif;
+    font-weight:regular;
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    line-height: 2rem;
+    padding-bottom: 1rem;
+}
+
+
+@media only screen and (max-width: 600px){
+
+    .quote{
+
+        bottom: auto;
+        top: 0;
+        right: 0;
+        left: auto;
+        width: 43vw;
+        font-size: 1.8rem;
+
+    }
+    
+
+    .rightblock{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: auto;
+
+    }
+    .scrollobject{
+
+        min-width:80vw;
+        
+
+    }
+
+    .scrollobject img{
+        width: 100%;
+        height: auto;
+    }
+    .casestudy{
+        /* padding: 1rem 0 0.5rem ; */
+
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-top: 1rem;
+    
+    }
+ 
+    .uiimages{
+
+        display: grid;
+        grid-template-columns: auto;
+        padding: 0 0;
+        
+    }
+    .uiimages img{
+        width: 100%;
+        /* padding-bottom: 1rem; */
+    }
+    
+    .aboutme{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutme img{
+        width:100%;
+        
+    }
+    
+    .aboutme .heading{
+        font-family: 'Anton', sans-serif;
+        font-size: 1.5rem;
+        padding-left: 0rem;
+    
+    }
+
+    .aboutme .text{
+        font-family: 'Roboto', sans-serif;
+        font-weight:regular;
+        font-size: 1rem;
+        padding-left: 0rem;
+        line-height: 1.4rem;
+    }
+
+    
+}
+
+
+
+/* @media only screen and (max-width: 400px) {
+   
+    
+    
+.rightblock{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: auto;
+}
+
+.differentlinks{
+
+    padding:2rem;
+    background-color: white;
+
+}
+a{
+    font-size: 1.5rem;
+
+}
+.quote{
+    font-size: 1.5rem;
+    width: 40vw;
+    text-align: left;
+}
+
+} */
