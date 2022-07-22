@@ -115,6 +115,7 @@ a{
 
 .backbutton{
 
+   
     display: flex;
     align-items: center;
     padding-bottom: 20px;
@@ -128,8 +129,9 @@ a{
 
 }
 .backbuttontext a{
-    font-family: 'Anton', sans-serif;
-    font-size: 1rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
 
 }
 .casestudy{
@@ -155,9 +157,10 @@ a{
 
 .casestudylink a{
 
-    font-family: 'Anton', sans-serif;
-    font-size: 1.4rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
 }
+
 
 
 .scrollobject  img{
