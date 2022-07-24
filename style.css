@@ -61,6 +61,7 @@
 display: flex;
 align-items: center;
 transition-duration: 200ms;
+background-color: black;
 
 }
 
@@ -96,8 +97,8 @@ a{
 }
 
 .scrollcontainer{
-    display: flex;
-    overflow-x: auto;
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
 .scrollobject{
@@ -151,14 +152,23 @@ a{
 
     display: flex;
     align-items: center;
-    padding-bottom: 2rem;
-    padding-top: 0.5rem;
+
+    background: black;
+    /* margin: 20px; */
+    width: auto;
+    border: solid black;
+    border-radius: 3rem;
+    color: #fdfdfd;
+    max-width: fit-content;
 }
 
 .casestudylink a{
 
     font-family: 'Oswald', sans-serif;
     font-size: 1.2rem;
+    font-weight: 100;
+    color:white;
+    padding-left: 1rem;
 }
 
 
@@ -231,20 +241,23 @@ a{
         width: auto;
 
     }
-    .scrollobject{
-
-        min-width:80vw;
-        
-
+    .scrollcontainer{
+        display: grid;
+        grid-template-columns: auto;
+    
     }
 
+    .scrollobject{
+        min-width: 100vw;
+    }
+    
     .scrollobject img{
         width: 100%;
         height: auto;
     }
     .casestudy{
         /* padding: 1rem 0 0.5rem ; */
-
+        width: 100vw;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
         padding-top: 1rem;
