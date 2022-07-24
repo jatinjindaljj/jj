@@ -108,7 +108,7 @@ a{
 .scrollobject{
     background-color: rgb(255, 255, 255);
     min-width: 500px;
-    margin-right: 20px;
+    
     border: 2px solid rgb(255, 255, 255);
     border-radius: 4px;
 }
@@ -125,6 +125,7 @@ a{
     align-items: center;
     padding-bottom: 20px;
     padding-top: 5px;
+    text-decoration: none;
 
 }
 
@@ -137,6 +138,7 @@ a{
     font-family: 'Oswald', sans-serif;
     font-size: 1.2rem;
     font-weight: 400;
+    text-decoration: none;
 
 }
 .casestudy{
@@ -204,7 +206,7 @@ a{
     
 }
 .aboutme img{
-    width:auto;
+    width:400px;
     
 }
 
@@ -224,7 +226,15 @@ a{
     padding-bottom: 1rem;
 }
 
+.contact{
 
+    font-family: 'Anton', sans-serif;
+    font-size: 1rem;
+    
+}
+.contact a{
+    text-decoration:none;
+}
 
 @media only screen and (max-width: 400px){
 
@@ -289,6 +299,7 @@ a{
 
     .aboutme img{
         width:100%;
+        padding-bottom: 1rem;
         
     }
     
