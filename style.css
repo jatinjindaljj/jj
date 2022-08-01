@@ -105,6 +105,8 @@ background-color: rgb(255, 217, 0);
 .scrollcontainer{
     display: grid;
     grid-template-columns: auto auto;
+    height:100%;
+
 }
 
 .scrollobject{
@@ -249,7 +251,11 @@ background-color: rgb(255, 217, 0);
     text-decoration:none;
     color: black;
 }
-
+.project{
+    /* display:none; */
+display:flex;
+flex-direction: column;
+}
 @media only screen and (max-width: 700px){
 
     .quote{
@@ -274,7 +280,7 @@ background-color: rgb(255, 217, 0);
     .scrollcontainer{
         display: grid;
         grid-template-columns: auto;
-    
+    height:100%;
     }
 
     .scrollobject{
@@ -338,6 +344,7 @@ background-color: rgb(255, 217, 0);
     }
     .project{
         padding-top: 1rem;
+
     }
     
 }
