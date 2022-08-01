@@ -120,6 +120,11 @@ background-color: rgb(255, 217, 0);
     font-size: 2rem;
 }
 
+.projectscontainer{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
 .backbutton{
 
    
@@ -170,6 +175,7 @@ background-color: rgb(255, 217, 0);
     border-radius: 3rem;
     color: #fdfdfd;
     max-width: fit-content;
+    margin-top: 0.5rem;
 }
 
 .casestudylink > a{
@@ -326,6 +332,12 @@ background-color: rgb(255, 217, 0);
         padding-left: 0rem;
         line-height: 1.4rem;
     }
-
+    .projectscontainer{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .project{
+        padding-top: 1rem;
+    }
     
 }
