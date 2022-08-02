@@ -14,7 +14,11 @@ a{
     text-decoration: none;
     color: white;
 }
-
+#App{
+height:100%;
+overflow-y: auto;
+/* background: red; */
+}
 .container{
     display: flex;
     height: 100vh;
@@ -65,18 +69,15 @@ a{
 display: flex;
 align-items: center;
 transition-duration: 200ms;
-background-color: rgb(255, 217, 0);
-
+padding:1rem;
+margin:0.25rem;
+border-radius: 1rem;
 }
-
 .singlelink:hover{
-
-    transform: translateX(20px);
-
-
-
+    background:lightgray
+    /* background-color: rgb(255, 217, 0); */
+    
 }
-
 
 .singlelink
 {
@@ -91,13 +92,16 @@ background-color: rgb(255, 217, 0);
 
 
 .differentlinks{
-
-    padding:2rem;
+display:flex;
+    /* padding:2rem; */
     background-color: white;
 
 }
 
 .rightblock{
+    padding:1rem;
+    display:flex;
+    flex-direction: column;
     width: 100%;
     background-color: white;
 }
@@ -153,10 +157,10 @@ background-color: rgb(255, 217, 0);
 }
 .casestudy{
 
-    padding-left: 2rem;
+    /* padding-left: 2rem;
     padding-top: 2rem;
     padding-right: 2rem;
-    padding-bottom: 5rem;
+    padding-bottom: 5rem; */
 
 }
 
@@ -206,7 +210,7 @@ background-color: rgb(255, 217, 0);
 
     display: grid;
     grid-template-columns: auto;
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
     
 }
 .uiimages img{
