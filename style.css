@@ -127,6 +127,10 @@ box-shadow: 1px 0px 1px rgb(189, 189, 189);
 overflow: hidden;
 }
 
+.projectimage{
+    height: 100%;
+}
+
 .projectname{
     font-family: 'Anton', sans-serif;
     font-size: 2rem;
@@ -220,7 +224,6 @@ overflow: hidden;
     border: solid black;
     border-radius: 3rem;
     color: #fdfdfd;
-    max-width: fit-content;
     margin-top: 0.5rem;
 }
 
