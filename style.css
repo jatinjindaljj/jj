@@ -281,7 +281,7 @@ a {
 
 .linkedintext {
   font-size: large;
-  padding: 8px 6px 4px 0px;
+  padding: 8px 6px 4px 20px;
 }
 .linkedinarrow {
   display: flex;
@@ -386,5 +386,9 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .linkedintext {
+    
+    padding: 8px 6px 4px 0px;
   }
 }
