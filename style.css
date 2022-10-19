@@ -1,395 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,900&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-a{
-    text-decoration: none;
-    color: white;
+a {
+  text-decoration: none;
+  color: white;
 }
 
-.container{
-    display: flex;
-    height: 100vh;
-    width: 100vw;
-   
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
 }
 
-.leftblock{
-    display: flex;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    background-color: rgb(69, 69, 69);
-    position: relative;
-    overflow: hidden;
+.leftblock {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(69, 69, 69);
+  position: relative;
+  overflow: hidden;
 }
 
-.leftblock > img{
-    position: absolute;
-    margin-left: auto;
-    height: 140%;
-    right: 0;
-    top: 0px;
-    /* width: 100%; */
-    /* object-fit: cover; */
-    /* transform:translate(20px,20px) scale(1) ; */
+.leftblock > img {
+  position: absolute;
+  margin-left: auto;
+  height: 140%;
+  right: 0;
+  top: 0px;
+  /* width: 100%; */
+  /* object-fit: cover; */
+  /* transform:translate(20px,20px) scale(1) ; */
 }
 
-.quote{
+.quote {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 2rem;
+  background-color: rgb(255, 217, 0);
+  color: rgb(0, 0, 0);
+  /* font-family: 'Lato', sans-serif; */
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
 
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    padding: 2rem;
-    background-color: rgb(255, 217, 0);
-    color: rgb(0, 0, 0);
-    /* font-family: 'Lato', sans-serif; */
-    font-family: 'Poppins', sans-serif;
-    font-weight: 900;
-    
-    font-size: 2.5rem;
-    width: 20vw;
-    text-align:right;
-    z-index: 1;
-
+  font-size: 2.5rem;
+  width: 20vw;
+  text-align: right;
+  z-index: 1;
 }
 
-
-.singlelink{
-
-display: flex;
-align-items: center;
-transition-duration: 200ms;
-background-color: rgb(255, 217, 0);
-
+.singlelink {
+  display: flex;
+  align-items: center;
+  transition-duration: 200ms;
+  background-color: rgb(255, 217, 0);
 }
 
-.singlelink:hover{
-
-    transform: translateX(20px);
-
-
-
+.singlelink:hover {
+  transform: translateX(20px);
 }
 
+.singlelink {
+  text-decoration: none;
 
-.singlelink
-{
-    text-decoration: none;
-    
-   
-    font-family: 'Poppins', sans-serif;
-    font-weight:900;
-    font-size: 1.8rem;
-    color: rgb(10, 10, 10);
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: rgb(10, 10, 10);
 }
 
-
-
-.differentlinks{
-
-    padding:2rem;
-    background-color: rgb(255, 217, 0); 
-
+.differentlinks {
+  padding: 2rem;
+  background-color: rgb(255, 217, 0);
 }
 
-.rightblock{
-    width: 100%;
-    background-color: white;
+.rightblock {
+  width: 100%;
+  background-color: white;
 }
 
-.scrollcontainer{
-    display: grid;
-    grid-template-columns: auto auto;
-    height:100%;
-
+.scrollcontainer {
+  display: grid;
+  grid-template-columns: auto auto;
+  height: 100%;
 }
 
-.scrollobject{
-    background-color: rgb(255, 255, 255);
-    
-    /* margin-right: 20px; */
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 4px;
-}
-.project{
-    /* display:none; */
-display:flex;
-flex-direction: column;
+.scrollobject {
+  background-color: rgb(255, 255, 255);
 
-border-radius: 0.5rem;
-height: auto;
-box-shadow: 0px 0px 5px rgb(189, 189, 189);
-overflow: hidden;
+  /* margin-right: 20px; */
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 4px;
 }
+.project {
+  /* display:none; */
+  display: flex;
+  flex-direction: column;
 
-.projectimage{
-    height: 100%;
+  border-radius: 0.5rem;
+  height: auto;
+  box-shadow: 0px 0px 5px rgb(189, 189, 189);
+  overflow: hidden;
 }
 
-.projectname{
-    font-family: 'Poppins', sans-serif;
-    font-size: 2rem;
-    padding: 1rem 0px;
+.projectimage {
+  height: 100%;
 }
 
-.projectdetail{
-
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 1rem;
-    color: #343434;
-
-}
-.projectbutton{
-
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    color: #343434;
-    padding: 1rem 0px;
-    
-
+.projectname {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+  padding: 1rem 0px;
+  color: rgb(21, 22, 22);
 }
 
-.projectbutton > a{
-    display: flex;
-    color: #1061C9;
-    align-items: center;
-    font-weight: 600;
+.projectdetail {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #343434;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.projectbutton {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: #343434;
+  padding: 1rem 0px;
 }
 
-.projectscontainer{
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 1rem;
-}
-.projectbutton  img{
-    height: 16px;
-    padding-left: 0.3rem;
+.projectbutton > a {
+  display: flex;
+  color: #1061c9;
+  align-items: center;
+  font-weight: 600;
 }
 
-.projectbottom{
-    padding: 0rem 1rem;
+.projectscontainer {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1rem;
+}
+.projectbutton img {
+  height: 16px;
+  padding-left: 0.3rem;
 }
 
-.backbutton{
-
-   
-    display: flex;
-    align-items: center;
-    padding-bottom: 20px;
-    padding-top: 5px;
-    text-decoration: none;
-
+.projectbottom {
+  padding: 0rem 1rem;
 }
 
-.backbutton img{
+.backbutton {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  padding-top: 5px;
+  text-decoration: none;
+}
 
+.backbutton > svg{
     width: 24px;
-
+    scale: 2.5;
+    padding-right: 0.2rem;
 }
-.backbuttontext a{
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 400;
-    text-decoration: none;
-    color: black;
-
+.backbuttontext a {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600; 
+  text-decoration: none;
+  color: black;
 }
-.casestudy{
-
-    padding-left: 2rem;
-    padding-top: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 5rem;
-
+.casestudy {
+  padding-left: 2rem;
+  padding-top: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 5rem;
 }
 
-.casestudyhead{
-    font-family: 'Poppins', sans-serif;
-    font-size: 3rem;
+.casestudyhead {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
 }
 
-.casestudylink{
+.casestudylink {
+  display: flex;
+  align-items: center;
+  padding: 0 0.4rem 0 0.8rem;
+  background: rgb(0, 0, 0);
+  /* margin: 20px; */
+  width: auto;
+  border: solid black;
+  border-radius: 3rem;
+  color: #fdfdfd;
+  margin-top: 0.5rem;
+}
 
-    display: flex;
-    align-items: center;
-    padding: 0 0.4rem 0 0.8rem;
-    background: rgb(0, 0, 0);
-    /* margin: 20px; */
+.casestudylink > a {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 100;
+  color: white;
+  /* padding-left: 1rem; */
+}
+
+.casestudylink > img {
+  padding-left: 0.2rem;
+}
+
+.scrollobject img {
+  height: 100%;
+  width: 100%;
+}
+
+.uiimages {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 0 2rem;
+}
+.uiimages img {
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.aboutme {
+  display: flex;
+  flex-direction: row;
+}
+.profileimage img {
+  width: 400px;
+}
+
+.aboutme .heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+
+.aboutme .text {
+  font-family: "Poppins", sans-serif;
+
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  line-height: 2rem;
+  padding-bottom: 1rem;
+}
+
+.contactlinks {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+}
+.contactlinks > a {
+  text-decoration: none;
+  color: black;
+}
+
+.linkedinbutton {
+    color: #1061c9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 0.3rem;
+  height: 50px;
+  box-shadow: 0px 0px 2px rgb(189 189 189);
+  width: 100%;
+}
+
+.linkedintext {
+  font-size: large;
+  padding: 8px 6px 4px 0px;
+}
+.linkedinarrow {
+  display: flex;
+  align-items: center;
+  padding-right: 16px;
+}
+
+.linkedinarrowimage {
+  width: 24px;
+}
+
+.contact {
+  width: max-content;
+  display: flex;
+
+}
+
+@media only screen and (max-width: 700px) {
+  .quote {
+    bottom: auto;
+    top: 0;
+    right: 0;
+    left: auto;
+    width: 60vw;
+    font-size: 1.8rem;
+  }
+
+  .rightblock {
+    position: fixed;
+    bottom: 0;
+    left: 0;
     width: auto;
-    border: solid black;
-    border-radius: 3rem;
-    color: #fdfdfd;
-    margin-top: 0.5rem;
-}
-
-.casestudylink > a{
-
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 100;
-    color:white;
-    /* padding-left: 1rem; */
-}
-
-.casestudylink > img{
-    padding-left: 0.2rem;
-}
-
-
-
-.scrollobject  img{
-    
-   
-    height: 100%;
-    width: 100%;
-}
-
-.uiimages{
-
+  }
+  .scrollcontainer {
     display: grid;
     grid-template-columns: auto;
-    padding: 0 2rem;
-    
-}
-.uiimages img{
+    height: 100%;
+  }
+
+  .scrollobject {
+    min-width: 100%;
+    min-height: 250px;
+  }
+
+  .scrollobject img {
+    width: 100%;
+    height: auto;
+  }
+  .casestudy {
+    /* padding: 1rem 0 0.5rem ; */
+    width: 100vw;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 1rem;
+  }
+
+  .uiimages {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 0 0;
+  }
+  .uiimages img {
+    width: 100%;
+    /* padding-bottom: 1rem; */
+  }
+
+  .aboutme {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profileimage > img {
     width: 100%;
     padding-bottom: 1rem;
-}
+  }
 
-.aboutme{
-    
-    display: flex;
-    flex-direction: row;
-    
-}
-.aboutme img{
-    width:400px;
-    
-}
+  .aboutme .heading {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    padding-left: 0rem;
+  }
 
-.aboutme .heading{
-    font-family: 'Poppins', sans-serif;
-    font-size: 2rem;
-    padding-left: 1rem;
-
-}
-
-.aboutme .text{
-    font-family: 'Poppins', sans-serif;
-
-    font-weight:600;
-    font-size: 1.2rem;
-    padding-left: 1rem;
-    line-height: 2rem;
-    padding-bottom: 1rem;
-}
-
-.contact{
-
-    font-family: 'Poppins', sans-serif;
+  .aboutme .text {
+    font-family: "Poppins", sans-serif;
+    font-weight: regular;
     font-size: 1rem;
-    
-}
-.contact a{
-    text-decoration:none;
-    color: black;
-}
+    padding-left: 0rem;
+    line-height: 1.4rem;
+  }
+  .projectscontainer {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .contact {
+    width: auto;
+  display: flex;
+  align-items: stretch;
 
-@media only screen and (max-width: 700px){
-
-    .quote{
-
-        bottom: auto;
-        top: 0;
-        right: 0;
-        left: auto;
-        width: 60vw;
-        font-size: 1.8rem;
-
-    }
-    
-
-    .rightblock{
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: auto;
-
-    }
-    .scrollcontainer{
-        display: grid;
-        grid-template-columns: auto;
-    height:100%;
-    }
-
-    .scrollobject{
-        min-width: 100%;
-        min-height: 250px;
-    }
-    
-    .scrollobject img{
-        width: 100%;
-        height: auto;
-    }
-    .casestudy{
-        /* padding: 1rem 0 0.5rem ; */
-        width: 100vw;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        padding-top: 1rem;
-    
-    }
- 
-    .uiimages{
-
-        display: grid;
-        grid-template-columns: auto;
-        padding: 0 0;
-        
-    }
-    .uiimages img{
-        width: 100%;
-        /* padding-bottom: 1rem; */
-    }
-    
-    .aboutme{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .aboutme img{
-        width:100%;
-        padding-bottom: 1rem;
-        
-    }
-    
-    .aboutme .heading{
-        font-family: 'Poppins', sans-serif;
-        font-size: 1.5rem;
-        padding-left: 0rem;
-    
-    }
-
-    .aboutme .text{
-        font-family: 'Poppins', sans-serif;
-        font-weight:regular;
-        font-size: 1rem;
-        padding-left: 0rem;
-        line-height: 1.4rem;
-    }
-    .projectscontainer{
-        display: grid;
-        grid-template-columns: auto;
-    }
-   
-    
+  }
+  .contact>a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
